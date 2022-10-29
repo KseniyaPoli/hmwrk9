@@ -27,12 +27,6 @@ public class FileParseTest {
     ClassLoader classLoader = FileParseTest.class.getClassLoader();
     Path archive = Paths.get("src/test/resources/archive.zip");
 
-    @BeforeAll
-    static void browserParams() {
-        Configuration.timeout = 10000; //10 sec
-        Configuration.browserSize = "1920x1080";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-    }
 
     @Test
     void readCsvFromZip() throws Exception {

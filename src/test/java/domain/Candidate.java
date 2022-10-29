@@ -1,4 +1,5 @@
 package domain;
+
 import java.util.List;
 
 public class Candidate {
@@ -23,7 +24,8 @@ public class Candidate {
     public String getName() {
         return name;
     }
-    public Integer getAge(){
+
+    public Integer getAge() {
         return age;
     }
 }
